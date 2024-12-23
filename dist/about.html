@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <style>
+    html, body {
+      height: 100%; /* Ensure the body and html cover the full height of the page */
+      margin: 0; /* Remove default margin */
+      display: flex; /* Enable flexbox on the body */
+      justify-content: center; /* Horizontally center the content */
+      align-items: center; /* Vertically center the content */
+      font-family:  "Roboto", Arial, sans-serif;
+      overflow-x: hidden
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to bottom right, #5F62D1, #6bf3c1);
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+    }
+
+    .blob {
+      position: absolute;
+      width: 300px;
+      height: 500px;
+      background-color: #5F62D1; /* Bright green */
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.7;
+    }
+
+    .blob:nth-child(1) {
+      top: 20%;
+      left: 0%;
+    }
+
+    .blob:nth-child(2) {
+      top: 30%;
+      left: 60%;
+    }
+
+    .blob:nth-child(3) {
+      top: 30%;
+      left: 50%;
+    }
+    .info-box{
+      padding: 50px;
+      margin: 20px;
+      text-align: left;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <script src="myScript.js"></script>
+  <nav class="navbar">
+    <ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="demo.html">Demo</a>
+      <a href="signup.html">Sign Up</a>
+    </ul>
+  </nav>
+
+  <!-- Gradient Blobs -->
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+
+  <!-- Main Content -->
+  <main>
+      <div class="container">
+        <h1>About Rhythm</h1> 
+        <div class="info-box">
+        <p>Rhythm is an app to help women understand how their menstrual cycle impacts their fitness and overall wellness.</p> 
+        <p>The idea came about when we learned that 70%+ of physical science research is based on male subjects and that women perform better than men over ultramarathon distances. </p> 
+        <p> It got us thinking - how many other sports can women outperform men in if we actually took the time to understand how menstrual cycles impact performance Rhythm is trying to answer this question. </p> 
+        <p> We want to go beyond other apps and provide automated training adjustments based on your current physiology, and specific, measurable training targets adapted to your cycle phase.</p>
+      </div>
+        <a href="signup.html">
+        <button class="button-40" role="button">Sign Up</button>
+      </a>
+      <a href="demo.html">
+        <button class="button-40" role="button">Try Our Demo</button>
+      </a>
+      </div>
+
+  </main>
+</body>
+
+</html>
